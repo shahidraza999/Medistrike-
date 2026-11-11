@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>MediStrike</title>
+<style>
+  html,body{margin:0;height:100%;background:#0b2a3a;font-family:system-ui,sans-serif;overflow:hidden;
+    -webkit-user-select:none;user-select:none;touch-action:none}
+  [hidden]{display:none!important}
+  #wrap{position:fixed;inset:0}
+  #game{position:absolute;inset:0}
+  #hud{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;
+    gap:6px;padding:6px 8px;background:#ffffffcc;font-weight:600;font-size:13px;color:#0b3b4a}
+  .mini{font-size:16px;border:0;border-radius:8px;padding:4px 10px;margin-left:4px;background:#1fa3a3;color:#fff}
+  #picker{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);display:flex;gap:10px}
+  #picker button{font-size:26px;width:54px;height:54px;border-radius:50%;border:3px solid transparent;background:#fff}
+  #picker button.on{border-color:#e04646}
+  #overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#000a;overflow:auto}
+  .card{background:#fff;color:#0b3b4a;border-radius:16px;padding:16px;width:min(340px,88vw);max-height:92vh;
+    overflow:auto;text-align:center;box-sizing:border-box}
+  .card h1,.card h2{margin:4px 0 8px}
+  .btn{display:block;width:100%;margin:8px 0;padding:12px;border:0;border-radius:10px;background:#1fa3a3;
+    color:#fff;font-size:16px}
+  .btn:disabled{opacity:.4}
+  .row{display:flex;gap:8px;align-items:center}
+  .row .btn{width:auto;margin:0}
+  .row input{flex:1;min-width:0;padding:10px;font-size:16px;text-transform:uppercase;border:2px solid #1fa3a3;border-radius:10px}
+  .code{font-size:34px;letter-spacing:6px;color:#e04646}
+  small{color:#567}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div id="game"></div>
+  <div id="hud" hidden>
+    <span id="hudText"></span>
+    <span><button class="mini" id="restartBtn" data-a="restart">⟳</button><button class="mini" data-a="menu">☰</button></span>
+  </div>
+  <div id="picker" hidden>
+    <button data-a="pick" data-v="capsule" title="Antibiotic Capsule: tap to split">💊</button>
+    <button data-a="pick" data-v="syringe" title="Vaccine Syringe: tap to boost">💉</button>
+    <button data-a="pick" data-v="tablet" title="Painkiller Tablet: heavy">⚪</button>
+  </div>
+  <div id="overlay" hidden></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+<script type="module" src="game.js"></script>
+</body>
+</html>

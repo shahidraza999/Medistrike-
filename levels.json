@@ -1,0 +1,55 @@
+[
+  {
+    "name": "Bacteria Bunker",
+    "shots": 3,
+    "par": 2,
+    "objects": [
+      {"t":"b","m":"tissue","x":680,"y":470,"w":20,"h":60},
+      {"t":"b","m":"tissue","x":760,"y":470,"w":20,"h":60},
+      {"t":"b","m":"bone","x":720,"y":430,"w":120,"h":20},
+      {"t":"e","k":"bacteria","x":720,"y":404},
+      {"t":"e","k":"bacteria","x":720,"y":484}
+    ],
+    "fact": "Antibiotics kill bacteria, but they do not work against viruses.",
+    "quiz": {"q": "Antibiotics are effective against...", "o": ["Viruses", "Bacteria", "Both equally"], "a": 1}
+  },
+  {
+    "name": "Flu Fortress",
+    "shots": 4,
+    "par": 3,
+    "objects": [
+      {"t":"b","m":"tissue","x":640,"y":470,"w":20,"h":60},
+      {"t":"b","m":"tissue","x":700,"y":470,"w":20,"h":60},
+      {"t":"b","m":"bone","x":670,"y":430,"w":90,"h":20},
+      {"t":"b","m":"bone","x":740,"y":470,"w":24,"h":60},
+      {"t":"b","m":"tissue","x":780,"y":470,"w":20,"h":60},
+      {"t":"b","m":"tissue","x":840,"y":470,"w":20,"h":60},
+      {"t":"b","m":"bone","x":810,"y":430,"w":90,"h":20},
+      {"t":"e","k":"virus","x":670,"y":402},
+      {"t":"e","k":"virus","x":810,"y":402},
+      {"t":"e","k":"bacteria","x":670,"y":484},
+      {"t":"e","k":"bacteria","x":810,"y":484}
+    ],
+    "fact": "Vaccines train your immune system to recognise a germ before you ever meet it.",
+    "quiz": {"q": "What do vaccines train?", "o": ["Your immune system", "Your bones", "Your lungs"], "a": 0}
+  },
+  {
+    "name": "Fungus Among Us",
+    "shots": 4,
+    "par": 3,
+    "objects": [
+      {"t":"b","m":"bone","x":600,"y":440,"w":24,"h":120},
+      {"t":"b","m":"tissue","x":710,"y":470,"w":20,"h":60},
+      {"t":"b","m":"tissue","x":810,"y":470,"w":20,"h":60},
+      {"t":"b","m":"bone","x":760,"y":430,"w":140,"h":20},
+      {"t":"b","m":"tissue","x":760,"y":380,"w":30,"h":80},
+      {"t":"b","m":"bone","x":760,"y":330,"w":90,"h":20},
+      {"t":"e","k":"fungus","x":760,"y":298},
+      {"t":"e","k":"bacteria","x":760,"y":484},
+      {"t":"e","k":"bacteria","x":660,"y":484},
+      {"t":"e","k":"virus","x":880,"y":482}
+    ],
+    "fact": "Athlete's foot is caused by a fungus that loves warm, damp places. Keep feet clean and dry.",
+    "quiz": {"q": "Athlete's foot is caused by a...", "o": ["Fungus", "Virus", "Vitamin"], "a": 0}
+  }
+]
